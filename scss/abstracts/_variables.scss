@@ -1,0 +1,127 @@
+//*****************
+// FONTS
+//*****************
+$font-primary: "Montserrat", sans-serif;
+$font-secondary: 'Lora', sans-serif;
+
+//*****************
+// COLORS
+//*****************
+//PRIMARY COLORS
+
+// ORANGE
+$color-primary-orange-900: hsl(22, 83%, 19%);
+$color-primary-orange-800: hsl(22, 80%, 26%);
+$color-primary-orange-700: hsl(22, 79%, 31%);
+$color-primary-orange-600: hsl(22, 74%, 38%);
+$color-primary-orange-500: hsl(22, 71%, 45%);
+$color-primary-orange-400: hsl(22, 78%, 55%);
+$color-primary-orange-300: hsl(21, 83%, 64%);
+$color-primary-orange-200: hsl(22, 92%, 76%);
+$color-primary-orange-100: hsl(22, 100%, 86%);
+$color-primary-orange-50: hsl(22, 100%, 95%);
+
+// LIME GREEN
+$color-primary-green-900: hsl(81, 86%, 14%);
+$color-primary-green-800: hsl(81, 78%, 21%);
+$color-primary-green-700: hsl(83, 74%, 27%);
+$color-primary-green-600: hsl(83, 70%, 34%);
+$color-primary-green-500: hsl(83, 64%, 42%);
+$color-primary-green-400: hsl(83, 55%, 52%);
+$color-primary-green-300: hsl(83, 63%, 61%);
+$color-primary-green-200: hsl(83, 68%, 74%);
+$color-primary-green-100: hsl(84, 77%, 86%);
+$color-primary-green-50: hsl(83, 88%, 94%);
+
+$color-primary-purple-900: hsl(276, 91%, 23%);
+$color-primary-purple-800: hsl(274, 87%, 31%);
+$color-primary-purple-700: hsl(274, 87%, 37%);
+$color-primary-purple-600: hsl(274, 87%, 43%);
+$color-primary-purple-500: hsl(273, 80%, 49%);
+$color-primary-purple-400: hsl(268, 82%, 60%); 
+$color-primary-purple-300: hsl(264, 96%, 70%);
+$color-primary-purple-200: hsl(262, 100%, 78%);
+$color-primary-purple-100: hsl(262, 100%, 88%);
+$color-primary-purple-50:  hsl(262, 90%, 96%);
+
+$color-primary-green-900: hsl(170, 97%, 15%);
+$color-primary-green-800: hsl(168, 80%, 23%);
+$color-primary-green-700: hsl(166, 72%, 28%);
+$color-primary-green-600: hsl(164, 71%, 34%);
+$color-primary-green-500: hsl(162, 63%, 41%);
+$color-primary-green-400: hsl(160, 51%, 49%);
+$color-primary-green-300: hsl(158, 58%, 62%);
+$color-primary-green-200: hsl(156, 73%, 74%);
+$color-primary-green-100: hsl(154, 75%, 87%);
+$color-primary-green-50:  hsl(152, 68%, 96%);
+
+// NEUTRALS
+// GREY
+$color-grey-900: hsl(0, 0%, 13%);
+$color-grey-800: hsl(0, 0%, 23%);
+$color-grey-700: hsl(0, 0%, 32%);
+$color-grey-600: hsl(0, 0%, 38%);
+$color-grey-500: hsl(0, 0%, 49%);
+$color-grey-400: hsl(0, 0%, 62%);
+$color-grey-300: hsl(0, 0%, 69%);
+$color-grey-200: hsl(0, 0%, 81%);
+$color-grey-100: hsl(0, 0%, 88%); 
+$color-grey-50: hsl(0, 0%, 97%);
+
+// WHITE
+$color-white: hsl(0, 0%, 100%);
+
+// SECONDARY COLORS
+// LIGHT BLUE
+$color-secondary-blue-900: hsl(200, 82%, 24%);
+$color-secondary-blue-800: hsl(200, 72%, 31%);
+$color-secondary-blue-700: hsl(200, 68%, 35%);
+$color-secondary-blue-600: hsl(200, 59%, 43%);
+$color-secondary-blue-500: hsl(200, 54%, 49%);
+$color-secondary-blue-400: hsl(200, 60%, 58%);
+$color-secondary-blue-300: hsl(200, 66%, 69%);
+$color-secondary-blue-200: hsl(200, 71%, 80%);
+$color-secondary-blue-100: hsl(200, 88%, 90%);
+$color-secondary-blue-50: hsl(201, 100%, 96%);
+
+// RED
+$color-secondary-red-900: hsl(360, 92%, 20%);
+$color-secondary-red-800: hsl(360, 85%, 25%);
+$color-secondary-red-700: hsl(360, 79%, 32%);
+$color-secondary-red-600: hsl(360, 72%, 38%);
+$color-secondary-red-500: hsl(360, 67%, 44%);
+$color-secondary-red-400: hsl(360, 64%, 55%);
+$color-secondary-red-300: hsl(360, 71%, 66%);
+$color-secondary-red-200: hsl(360, 77%, 78%);
+$color-secondary-red-100: hsl(360, 82%, 89%);
+$color-secondary-red-50: hsl(360, 100%, 97%);
+
+// YELLOW
+$color-secondary-yellow-900: hsl(43, 86%, 17%);
+$color-secondary-yellow-800: hsl(43, 77%, 27%);
+$color-secondary-yellow-700: hsl(43, 72%, 37%);
+$color-secondary-yellow-600: hsl(42, 63%, 48%);
+$color-secondary-yellow-500: hsl(42, 78%, 60%);
+$color-secondary-yellow-400: hsl(43, 89%, 70%);
+$color-secondary-yellow-300: hsl(43, 90%, 76%);
+$color-secondary-yellow-200: hsl(45, 86%, 81%);
+$color-secondary-yellow-100: hsl(45, 90%, 88%);
+$color-secondary-yellow-50: hsl(45, 100%, 96%);
+
+// SPACING & SIZING SYSTEM
+$size-8: 8px;
+$size-10: 10px;
+$size-12: 12px;
+$size-14: 14px;
+$size-16: 16px;
+$size-18: 18px;
+$size-20: 20px;
+$size-24: 24px;
+$size-30: 30px;
+$size-36: 36px;
+$size-48: 48px;
+$size-60: 60px;
+$size-72: 72px;
+$size-84: 84px;
+$size-96: 96px;
+

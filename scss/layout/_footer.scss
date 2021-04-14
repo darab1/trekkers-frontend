@@ -1,0 +1,128 @@
+// .footer {
+//   background-color: $color-primary-orange-100;
+//   padding: $size-36;
+//   padding-bottom: 0;
+//   grid-column: full-start / full-end;
+//   text-align: center;
+
+//   display: grid;
+//   align-items: end;
+
+//   &__link {
+//     color: $color-white;
+//     font-size: $size-30;
+//     font-weight: 700;
+//     font-family: $font-secondary;
+//     text-transform: uppercase;
+//     letter-spacing: 6px;
+//     cursor: pointer;
+//   }
+
+//   @media (max-width: 849px) {
+//     & {
+//       padding: $size-24;
+//     }
+
+//     &__link {
+//       font-size: $size-24;
+//       letter-spacing: 3px;
+//     }
+//   }
+// }
+
+// .copyright {
+//   color: $color-white;
+// }
+
+.footer {
+  grid-column: full-start / full-end;
+  grid-row-end: -1;
+  background-color: $color-primary-purple-50;
+  border-top: 1px solid $color-primary-purple-500;
+
+  &__nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 859px) {
+      flex-direction: column;
+      align-items: center;
+    }
+}
+
+  &__logo-wrapper {
+    padding: $size-18 $size-30;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 379px) {
+      flex-direction: column;
+    }
+}
+
+  &__logo {
+    width: $size-48;
+    height: $size-48;
+    fill: $color-primary-purple-700;
+    flex: 0 0 auto;
+  }
+
+  &__links {
+    padding: $size-18 $size-30;
+    font-size: $size-16;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+
+      @media (max-width: 1144px) {
+    & {
+
+      text-align: center;
+    }
+  }
+
+    a {
+      display: inline-block;
+      padding: $size-8 $size-12;
+      font-size: $size-12;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-align: center;
+      border-radius: 100px;
+      color: $color-primary-purple-700;
+      outline: none;
+      transition: all 300ms ease-in-out;
+    }
+
+    a:hover {
+      background: $color-primary-purple-500;
+      color: $color-white;
+      cursor: pointer;
+    }
+
+    a:not(:last-child) {
+      margin-right: $size-10;
+    }
+  }
+
+}
+
+.heading-logo {
+  margin-left: $size-18;
+  color: $color-primary-purple-700;
+  font-size: $size-30;
+  font-family: $font-secondary;
+  font-weight: 700;
+
+  @media (max-width: 379px) {
+      margin-left: 0;
+    }
+}
+
+// .copyright {
+//   color: $color-grey-800;
+//   text-align: center;
+// }

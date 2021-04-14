@@ -1,0 +1,108 @@
+// HOME PAGE GRID LAYOUT
+.container {
+  display: grid;
+  // 9 rows for 9 sections
+  // grid-template-rows: 8vh 92vh repeat(4, min-content) 35vh min-content 13vh;
+  grid-template-rows: 8vh 75vh repeat(4, min-content) 35vh min-content 15vh;
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 8.75rem) [col-end]) [center-end] 1fr [full-end];
+
+  @media (max-width: 639px) {
+    & {
+      grid-template-rows: min-content 60vh repeat(4, min-content) 35vh min-content min-content;
+    }
+  }
+}
+
+// LOG IN PAGE LAYOUT
+.container-login {
+  display: grid;
+  grid-template-rows: 8vh 81vh 11vh;
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 8.75rem) [col-end]) [center-end] 1fr [full-end];
+
+   @media (max-width: 859px) {
+    & {
+      grid-template-rows: min-content 75vh min-content; 
+    }
+  }
+
+  @media (max-width: 639px) {
+    & {
+      grid-template-rows: min-content 85vh min-content; 
+    }
+  }
+
+  // *TODO : Make the footer section stick to the bottom, without leaving any space under it in mobitle layout
+  @media (max-width: 499px) {
+    & {
+      grid-template-rows: min-content 70vh min-content;
+    }
+  }
+}
+
+// SIGN UP PAGE LAYOUT
+.container-signup {
+  display: grid;
+  grid-template-rows: 8vh 81vh 11vh;
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 8.75rem) [col-end]) [center-end] 1fr [full-end];
+
+   @media (max-width: 859px) {
+    & {
+      grid-template-rows: min-content 75vh min-content; 
+    }
+  }
+  
+  @media (max-width: 639px) {
+    & {
+      grid-template-rows: min-content 75vh min-content; 
+    }
+  }
+
+  // *TODO : Make the footer section stick to the bottom, without leaving any space under it in mobitle layout
+  @media (max-width: 499px) {
+    & {
+      grid-template-rows: min-content 70vh min-content;
+    }
+  }
+}
+
+///
+// TOUR DETAILS PAGE GRID LAYOUT
+///
+.container-tour {
+  display: grid;
+  grid-template-rows: 8vh 70vh repeat(6, min-content);
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 8.75rem) [col-end]) [center-end] 1fr [full-end];
+
+   @media (max-width: 1144px) {
+    & {
+      grid-template-rows: min-content 50vh repeat(6, min-content);
+    }
+  }
+
+   @media (max-width: 554px) {
+    & {
+      grid-template-rows: min-content 25vh repeat(6, min-content);
+    }
+  }
+}
+
+//USER ACCOUNT PAGE GRID LAYOUT
+.container-user-account {
+  display: grid;
+  grid-template-rows: 8vh min-content min-content;
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 8.75rem) [col-end]) [center-end] 1fr [full-end];
+
+  
+  @media (max-width: 639px) {
+    & {
+      grid-template-rows: repeat(3, min-content); 
+    }
+  }
+
+  // // *TODO : Make the footer section stick to the bottom, without leaving any space under it in mobitle layout
+  // @media (max-width: 499px) {
+  //   & {
+  //     grid-template-rows: min-content 75% 25%;
+  //   }
+  // }
+}

@@ -1,0 +1,92 @@
+.signup {
+  background-color: $color-primary-purple-50;
+  grid-column: full-start / full-end;
+  padding: 0 $size-14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__form {
+    background-color: $color-white;
+    width: 400px;
+    border-radius: $size-24;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 499px) {
+      margin-top: $size-20;
+      margin-bottom: $size-20;
+    }
+  }
+
+  &__heading {
+    margin-top: $size-30;
+    margin-bottom: $size-30;
+    font-size: $size-30;
+    font-family: $font-secondary;
+    font-weight: 700;
+    color: $color-primary-purple-700;
+    text-align: center;
+  }
+
+  &__name-wrapper {
+    margin-left: $size-30;
+    margin-bottom: $size-24;
+  }
+
+  &__email-wrapper {
+    margin-left: $size-30;
+    margin-bottom: $size-24;
+  }
+
+  &__password-wrapper {
+    margin-left: $size-30;
+    margin-bottom: $size-20;
+  }
+
+
+
+  &__btn {
+    margin-bottom: $size-20;
+    padding: $size-10 $size-48;
+    align-self: center;
+    font-size: $size-16;
+    font-weight: 500;
+    background-color: $color-primary-purple-500;
+    color: $color-white;
+    border: none;
+    border-radius: $size-20;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      background-color: $color-primary-purple-700;
+    }
+  }
+}
+
+.label {
+  display: block;
+  color: $color-grey-500;
+  font-size: $size-20;
+  font-weight: 500;
+}
+
+.input {
+  align-self: flex-start;
+  width: 85%;
+  color: $color-grey-500;
+  font-size: $size-20;
+  font-weight: 500;
+  background: $color-primary-purple-50;
+  padding: $size-10 $size-20;
+  border: none;
+  border-radius: $size-20;
+
+  &:focus {
+    outline-color: $color-primary-purple-700;
+    background-color: $color-white;
+  }
+}

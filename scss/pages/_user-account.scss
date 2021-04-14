@@ -1,0 +1,301 @@
+
+.main {
+  background-color: $color-primary-purple-50;
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+}
+
+.user-dashboard {
+   border: 3px solid $color-primary-purple-700;
+   border-radius: 15px;
+   width: 80%;
+   margin: 50px auto;
+   display: grid;
+   grid-template-columns: minmax(min-content, 350px) minmax(400px, 1fr);
+
+   &__nav {
+    background-color: $color-primary-purple-700;
+    padding-top: $size-30;
+    padding-bottom: $size-30;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    //helper class: when you select a nav link like user info, this get added to it's class
+    &-active {
+      border-left: 4px solid $color-primary-green-200;
+    }
+   }
+
+   &__heading {
+    color: $color-white;
+    margin-bottom: $size-30;
+    padding-left: $size-16;
+    font-size: $size-20;
+    font-weight: 700;
+    font-family: $font-secondary;
+    opacity: 0.7;
+   }
+
+   &__nav-list {
+     list-style-type: none;
+   }
+
+   &__nav-list-item {
+    position: relative;
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: $size-14;
+    }
+   }
+
+   &__nav-list-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: $color-primary-green-200;
+    transform: scaleY(0);
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+    background-color 0.1s;
+   }
+
+   &__nav-list-item:hover::before,
+   &__nav-list-item:active::before {
+    transform: scaleY(1);
+    width: 100%;
+   }
+
+   &__nav-list-item:active::before {
+     background-color: $color-primary-green-400;
+   }
+
+   //Tried to give background color to active/selected nav list-item
+  //  &__nav-list-item:active::before {
+  //    background-color: $color-primary-green-200;
+  //  }
+
+   &__nav-list-link {
+    color: $color-white;
+    width: 100%;
+    padding: $size-16 $size-30;
+    font-size: $size-12;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 3;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+  
+    &:hover {
+      color: $color-primary-purple-700;
+    }
+
+    &:hover .user-dashboard__icon {
+      fill: $color-primary-purple-700;
+    }
+
+    }   
+
+   &__icon {
+     width: $size-30;
+     height: $size-30;
+     margin-right: $size-20;
+     fill: $color-white;
+   }
+
+  &__form-wrapper {
+    margin-left: 50px;
+  }
+
+  &__content {
+    padding: 50px 0;
+  }
+}
+
+
+ .form {
+    &__group-photo {
+      margin-bottom: $size-36;
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      grid-template-rows: min-content 1fr;
+      column-gap: $size-24;
+      row-gap: $size-14;
+    }
+
+    &__user-photo {
+      height: 100px;
+      width: 100px;
+      display: block;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    &__user-name {
+      color: $color-primary-purple-700;
+      justify-self: start;
+      align-self: center;
+      font-size: $size-24;
+      font-weight: 500;
+    }
+
+    &__upload-photo {
+      display: none;
+    }
+
+    &__group-photo-label {
+      color: $color-primary-purple-700;
+      background-color: $color-primary-green-200;
+      padding: 4px;
+      grid-row: 2 / -1;
+      grid-column: 1 / -1;
+      justify-self: start;
+      font-size: $size-14;
+      font-weight: 500;
+      transition: background-color 0.2s ease-in-out;
+
+      &:hover {
+        background-color: $color-primary-green-300;
+      }
+    }
+
+    &__group-fullname {
+      margin-bottom: $size-36;
+    }
+
+    &__fullname-label {
+      margin-bottom: $size-8;
+      display: block;
+      color: $color-grey-600;
+      font-size: $size-16;
+      font-weight: 500;
+    }
+
+    &__fullname-input {
+      align-self: flex-start;
+      width: 45%;
+      color: $color-grey-500;
+      font-size: $size-20;
+      font-weight: 500;
+      background: $color-primary-purple-100;;
+      padding: $size-10 $size-20;
+      border: none;
+      border-radius: $size-20;
+
+      &:focus {
+        background-color: $color-white;
+        outline: none;
+        border: 2px solid $color-primary-purple-300;
+        box-shadow: 0 0 7px $color-primary-purple-300;
+      }
+    }
+
+    &__group-email {
+      margin-bottom: $size-36;
+    }
+
+    &__email-label {
+      margin-bottom: $size-8;
+      display: block;
+      color: $color-grey-600;
+      font-size: $size-16;
+      font-weight: 500;
+    }
+
+    &__email-input {
+      align-self: flex-start;
+      width: 45%;
+      color: $color-grey-500;
+      font-size: $size-20;
+      font-weight: 500;
+      background: $color-primary-purple-100;
+      padding: $size-10 $size-20;
+      border: none;
+      border-radius: $size-20;
+
+      &:focus {
+        background-color: $color-white;
+        outline: none;
+        border: 2px solid $color-primary-purple-300;
+        box-shadow: 0 0 7px $color-primary-purple-300;
+      }
+    }
+
+    .btn__save-changes, .btn__save-password {
+      padding: $size-10 $size-48;
+      align-self: center;
+      font-size: $size-16;
+      background-color: $color-primary-purple-500;
+      color: $color-white;
+      border: none;
+      border-radius: $size-20;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        background-color: $color-primary-purple-700;        
+      }
+
+      &:focus {
+        outline: none;
+        border: 3px solid $color-primary-purple-300;
+        box-shadow: 0 0 10px $color-primary-purple-300;
+      }
+    }
+
+    &__heading {
+      margin-bottom: $size-24;
+      color: $color-primary-purple-700;
+      font-size: $size-36;
+      font-weight: 600;
+      font-family: $font-secondary;
+
+    }
+
+    &__group-password-current,
+    &__group-password-new,
+    &__group-password-confirm {
+      margin-bottom: $size-36;
+    }
+
+    &__password-current-label,
+    &__password-new-label,
+    &__password-confirm-label { 
+      margin-bottom: $size-8;
+      display: block;
+      color: $color-grey-600;
+      font-size: $size-16;
+      font-weight: 500;
+    }
+
+    &__password-current-input,
+    &__password-new-input,
+    &__password-confirm-input {
+      align-self: flex-start;
+      width: 45%;
+      color: $color-grey-500;
+      font-size: $size-20;
+      font-weight: 500;
+      background: $color-primary-purple-100;
+      padding: $size-10 $size-20;
+      border: none;
+      border-radius: $size-20;
+
+      &:focus {
+        background-color: $color-white;
+        outline: none;
+        border: 2px solid $color-primary-purple-300;
+        box-shadow: 0 0 7px $color-primary-purple-300;
+      }
+    }
+  }// .form
+
+  .hr-line {
+    background-color: $color-primary-purple-700;
+    margin: 50px 0;
+    height: 1px;
+    width: 100%;
+  }
